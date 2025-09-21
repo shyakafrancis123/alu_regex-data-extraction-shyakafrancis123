@@ -14,7 +14,9 @@ def extract_urls(text):
 def extract_phone_numbers(text):
 # This pattern will extract common North-American phone formats
     # Matches (123) 456-7890, 123-456-7890, 123.456.7890
-    pattern = r'(\(\d{3}\)\s?|\d{3}[-.])\d{3}[-.]\d{4}'
+    pattern = re.compile(
+        r'\+?\d{1,3}([ .-]?\d{3}){3,4}\b'
+    )
     return re.findall(pattern, text)
 
 def extract_hashtags(text):
