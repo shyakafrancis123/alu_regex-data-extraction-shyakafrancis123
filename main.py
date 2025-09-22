@@ -1,5 +1,17 @@
 import re
 
+data = """
+user@example.com
+https://www.example.com
+(123) 456-7890
+1234 5678 9012 3456
+14:30
+2:30 PM
+<p>Hello</p>
+#example
+$19.99
+"""
+
 # --- Regex Patterns ---
 PATTERNS = {
     "emails": re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'),
@@ -27,6 +39,12 @@ if __name__ == "__main__":
     with open("tests/sample_input.txt", "r", encoding="utf-8") as f:
         data = f.read()
 
+    results = extract_all(data)
+    for category, items in results.items():
+        print(f"\n{category.upper()}:")
+        for item in items:
+            print(f"  {item}")
+if __name__ == "__main__":
     results = extract_all(data)
     for category, items in results.items():
         print(f"\n{category.upper()}:")
