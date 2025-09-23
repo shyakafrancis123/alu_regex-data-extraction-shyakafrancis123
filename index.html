@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Checker</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Data Extraction</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Text Checker</h1>
-        <p>Check your text for sensitive information</p>
-        
-        <div class="input-area">
-            <p class="info">This tool scans text</p>
-            <textarea id="inputText" placeholder="Enter your text here to check for information like emails, phone numbers, credit cards, etc."></textarea>
-            <button onclick="checkText()">Check Text</button>
-            <div class="example">
-                Try: johndoe@email.com 555-123-4567 4532-1234-5678-9012
-            </div>
-        </div>
-        
-        <div id="results" class="results"></div>
-    </div>
+  <div class="container">
+    <h1>Regex Data Extraction Tool</h1>
 
-    <script src="index.js"></script>
+    <p style="color: black; text-align: center; font-weight: bold;">
+  Kindly paste any text below. Then proceed to click on the "Check Text" button to extract emails,
+  URLs, phone numbers, hashtags, currency, and credit card numbers.
+</p>
+
+    <textarea id="inputText" placeholder=" Please enter text to be validated here...................."></textarea>
+    <button id="checkBtn">Check Text</button>
+
+    <div id="results" class="results"></div>
+  </div>
+
+
+  <script src="app.js"></script>
 </body>
 </html>
