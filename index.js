@@ -9,7 +9,7 @@ function checkText() {
     const patterns = {
         emails: /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g,
         urls: /\bhttps?:\/\/[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:\/[^\s]*)?\b/g,
-        phones: /\b(\(?\d{3}\)?[-.\s]?)\d{3}[-.\s]?\d{4}\b/g,
+        phones: /\+?\d{1,3}?[-.\s]?\d{2,4}[-.\s]?\d{3,4}[-.\s]?\d{3,4}/g,
         creditCards: /\b(?:\d{4}[- ]?){3}\d{4}\b/g,
         time: /\b((1[0-2]|0?[1-9]):[0-5][0-9]\s?(AM|PM))\b|\b((2[0-3]|[01]?[0-9]):[0-5][0-9])\b/gi,
         htmlTags: /<\/?[a-zA-Z][^>]*>/g,
