@@ -1,0 +1,35 @@
+Here are some random details for testing:
+
+Emails:
+- john.doe@example.com
+- alice_smith99@mail.co.uk
+- contact+support@my-site.org
+
+Websites:
+- https://www.example.com
+- http://openai.com/blog
+- HTTPS://TESTING-URL.net/path?query=1
+
+Phone Numbers:
+- (123) 456-7890
+- 123-456-7890
+- +1 987.654.3210
+- 456 789 0123
+
+Hashtags:
+#javascript #coding #regex101 #RwandaTech
+
+Money Amounts:
+- $19.99
+- USD 50
+- EUR 75.50
+- £100
+- RWF 12,000
+
+Credit Card Numbers:
+- 4111 1111 1111 1111
+- 5500-0000-0000-0004
+- 378282246310005
+
+Random text to ensure patterns don’t accidentally match:
+This line contains no emails or numbers.
