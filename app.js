@@ -9,7 +9,7 @@ const patterns = {
   creditCards: /\b(?:\d[ -]*?){13,19}\b/g
 };
 
-// ---------- Risk mapping for box colors ----------
+// Risk mapping for box colors 
 function getRisk(type) {
   switch (type) {
     case "emails":
