@@ -3,7 +3,8 @@ const patterns = {
   emails: /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g,
   urls: /\bhttps?:\/\/[^\s/$.?#].[^\s]*\b/gi,
   // African–focused phone: optional + & up to 3-digit country code, optional spaces/dashes
-  phones: /\b(?:\+?\d{1,3}[-.\s]?)?(?:\(?\d{2,3}\)?[-.\s]?){2,4}\d{2,4}\b/g,
+  phones: /(?:\+?\d{1,3}[\s.-]?)?(?:\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}/,
+
   hashtags: /#[\w]+/g,
   currency: /(?:USD|EUR|GBP|RWF|\$|€|£)\s?\d+(?:[.,]\d{2})?/g,
   creditCards: /\b(?:\d[ -]*?){13,19}\b/g
